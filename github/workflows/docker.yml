@@ -22,7 +22,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags:tags: ghcr.io/itayp11/${{ github.repository }}:latest
+          tags:tags: ghcr.io/itayp11/${{ github.repository }}:latest 
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GIT_TOKEN }} 
