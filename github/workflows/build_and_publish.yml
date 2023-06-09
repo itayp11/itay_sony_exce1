@@ -1,7 +1,7 @@
 name: Build and Publish Docker Image
 
 on:
-  push: 
+  push:
     branches:
       - main
 
@@ -22,7 +22,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: tags: ghcr.io/itayp11/itay_sony_exce1:latest
+          tags: ghcr.io/itayp11/itay_sony_exce1:latest
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GIT_TOKEN }}
