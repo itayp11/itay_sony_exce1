@@ -10,7 +10,7 @@ COPY requirements.txt .
 # Install the dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the application code into the container
+# Copy the application code into the container 
 COPY app.py .
 
 # Set the entry point command for the container
